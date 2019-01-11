@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Logger Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Logger" class="dashAnchor"></a>
+    <a title="Logger Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">HPLogger Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Ftwitter%2Ecom%2Fdocsets%2FHPLogger%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">HPLogger Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Logger Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Logger.html">Logger</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Logger</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Logger</span></code></pre>
+
+                </div>
+              </div>
+            <p>Log the given message in the system log.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">HPLogger</span>
+<span class="o">...</span>
+
+<span class="kt">Logger</span><span class="o">.</span><span class="nf">log</span><span class="p">(</span><span class="s">"Log any items"</span><span class="p">)</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8HPLogger6LoggerV7isDebugSbvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/isDebug" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8HPLogger6LoggerV7isDebugSbvpZ">isDebug</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This Property <code>isDebug</code> is use to manage application is in debug or in production mode.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isDebug</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8HPLogger6LoggerV3logyyxlFZ"></a>
+                    <a name="//apple_ref/swift/Method/log(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8HPLogger6LoggerV3logyyxlFZ">log(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Writes the textual representations of the given items into the standard output.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">HPLogger</span>
+<span class="o">...</span>
+
+<span class="kt">Logger</span><span class="o">.</span><span class="nf">log</span><span class="p">(</span><span class="s">"Log any items"</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code>Logger.logInfo(&quot;Log any items&quot;)</code></p>
+
+</div>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This method Log in console when <code><a href="../Structs/Logger.html#/s:8HPLogger6LoggerV7isDebugSbvpZ">isDebug</a></code> value is <code>true</code>.</p>
+
+</div>
+<h2 id='important-notes' class='heading'>Important Notes</h2>
+
+<ul>
+<li>Please change the value of <code><a href="../Structs/Logger.html#/s:8HPLogger6LoggerV7isDebugSbvpZ">isDebug</a></code> <code>false</code> when in production mode</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">log</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Zero or more items to print.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><em>Items</em>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8HPLogger6LoggerV7logInfo_4file4line8functionyx_SSSiSStlFZ"></a>
+                    <a name="//apple_ref/swift/Method/logInfo(_:file:line:function:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8HPLogger6LoggerV7logInfo_4file4line8functionyx_SSSiSStlFZ">logInfo(_:file:line:function:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Writes the textual representations of the given items into the standard output.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">HPLogger</span>
+<span class="o">...</span>
+
+<span class="kt">Logger</span><span class="o">.</span><span class="nf">logInfo</span><span class="p">(</span><span class="s">"Log any items"</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code>Logger.log(&quot;Log any items&quot;)</code></p>
+
+</div>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This method Log in console when <code><a href="../Structs/Logger.html#/s:8HPLogger6LoggerV7isDebugSbvpZ">isDebug</a></code> value is <code>true</code>.</p>
+
+</div>
+<h2 id='important-notes' class='heading'>Important Notes</h2>
+
+<ul>
+<li>Please change the value of <code><a href="../Structs/Logger.html#/s:8HPLogger6LoggerV7isDebugSbvpZ">isDebug</a></code> <code>false</code> when in production mode</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">logInfo</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Zero or more items to print.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>file name to print.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>line</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>line name to print.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>function</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>function name to print.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><em>Items</em> with current time, file name, line name and function name.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="http://EXAMPLE/HPLogger" target="_blank" rel="external">Himanshu Parashar</a>. All rights reserved. (Last updated: 2019-01-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

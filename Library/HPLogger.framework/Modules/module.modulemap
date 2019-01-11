@@ -1,0 +1,4 @@
+framework module HPLogger {
+  header "HPLogger-Swift.h"
+  requires objc
+}
